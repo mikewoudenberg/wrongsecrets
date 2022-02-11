@@ -62,7 +62,7 @@ public class Challenge14 extends Challenge {
         }
     }
 
-    //todo: write a test!
+    //todo: write a test and make sure the file can be picked up from resources or somewhere at the container! (update script to include it at container build time)
     private boolean isanswerCorrectInKeeyPassx(String answer) {
         if (Strings.isEmpty(keepassxPassword) || Strings.isEmpty(answer)) {
             log.info("Checking secret with values {}, {}", keepassxPassword, answer);
